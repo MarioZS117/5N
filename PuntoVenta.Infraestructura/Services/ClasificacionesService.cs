@@ -17,7 +17,7 @@ public class ClasificacionesService : IClasificaciones
             command.CommandText = "dbo.AdministrarClasificaciones";
             command.CommandType = CommandType.StoredProcedure;
             // Agregar parámetros
-            command.Parameters.Add(new SqlParameter("@Op", SqlDbType.VarChar) { Value = "Insertar" });
+            command.Parameters.Add(new SqlParameter("@Op", SqlDbType.VarChar) { Value = "Actualizar" });
             command.Parameters.Add(new SqlParameter("@idClasificacion", SqlDbType.UniqueIdentifier) { Value = clasificaciones.idClasificacion });
             command.Parameters.Add(new SqlParameter("@Descripcion", SqlDbType.VarChar) { Value = clasificaciones.Descripcion });
             command.Parameters.Add(new SqlParameter("@Tipo", SqlDbType.VarChar) { Value = clasificaciones.Tipo });
@@ -67,18 +67,17 @@ public class ClasificacionesService : IClasificaciones
     {
         using var dbContext = new BDBiblioteca();
 
-        // Buscar el autor por ID
-        var clasificaciones = await dbContext.Clasificaciones.FirstOrDefaultAsync(a => a.idClasificacion == idClasificacion);
+        var clasificacion = await dbContext.Clasificaciones.FirstOrDefaultAsync(a => a.idClasificacion == idClasificacion);
 
-        if (clasificaciones == null)
+        if (clasificacion == null)
         {
             response.Exito = false;
             response.Mensaje = "El autor no existe.";
             return response;
         }
 
-        // Eliminar el autor
-        dbContext.Clasificaciones.Remove(clasificaciones);
+        // Eliminar la Clasificacion
+        dbContext.Clasificaciones.Remove(clasificacion);
         await dbContext.SaveChangesAsync();
 
         response.Exito = true;

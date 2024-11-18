@@ -18,12 +18,12 @@ public class ClasificacionesController:ControllerBase{
         var consulta = await _clasificaciones.ActualizarClasificacion(clasificaciones);
         return Ok(consulta);
     }
-     [HttpPost("BorrarClasificacion")]
+     [HttpDelete("BorrarClasificacion")]
     public async Task<IActionResult> BorrarClasificacion(Guid idClasificacion){
         var consulta = await _clasificaciones.BorrarClasificacion(idClasificacion);
         return Ok(consulta);
     }
-    [HttpPost("ConsultarClasificacion")]
+    [HttpGet("ConsultarClasificacion")]
     public IActionResult ConsultarClasificacion(string? busqueda){
         var consulta =  _clasificaciones.ConsultarClasificacion(busqueda);
         return Ok(consulta);

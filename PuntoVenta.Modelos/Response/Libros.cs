@@ -8,7 +8,7 @@ namespace PuntoVenta.Models.Response
         public string? Titulo { get; set; }
         public Guid idAutor { get; set; }
         public Guid idEditorial { get; set; }
-        public DateTime FechaPublicacion { get; set; }
+        public DateOnly FechaPublicacion { get; set; }
         public string? Edicion { get; set; }
         public Guid idGenero { get; set; }
         public Guid idClasificacion { get; set; }
