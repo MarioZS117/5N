@@ -4,6 +4,7 @@
     "\\PuntoVenta.API",
     "\\PuntoVenta.API\\Controllers",
     "\\PuntoVenta.Infraestructura",
+    "\\PuntoVenta.Infraestructura\\Data",
     "\\PuntoVenta.Infraestructura\\Services",
     "\\PuntoVenta.Lib",
     "\\PuntoVenta.Lib\\Helpers",
@@ -11,6 +12,6 @@
     "\\PuntoVenta.Modelos",
     "\\PuntoVenta.Modelos\\Response"
   ],
-  "SelectedNode": "\\5N.sln",
+  "SelectedNode": "\\PuntoVenta.API\\PuntoVenta.API.csproj",
   "PreviewInSolutionExplorer": false
 }

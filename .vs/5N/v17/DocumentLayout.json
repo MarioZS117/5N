@@ -34,7 +34,8 @@
               "RelativeToolTip": "PuntoVenta.Infraestructura\\Services\\PrestamoService.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAD4vxIAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T22:29:06.694Z"
+              "WhenOpened": "2024-11-11T22:29:06.694Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "PuntoVenta.API\\Controllers\\PrestamoController.cs",
               "ToolTip": "C:\\5N\\PuntoVenta.API\\Controllers\\PrestamoController.cs",
               "RelativeToolTip": "PuntoVenta.API\\Controllers\\PrestamoController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T22:27:51.593Z",
               "EditorCaption": ""
