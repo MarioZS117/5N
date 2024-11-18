@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PuntoVenta.API",
+    "\\PuntoVenta.API\\Controllers",
+    "\\PuntoVenta.Infraestructura",
+    "\\PuntoVenta.Infraestructura\\Services",
+    "\\PuntoVenta.Lib",
+    "\\PuntoVenta.Lib\\Helpers",
+    "\\PuntoVenta.Lib\\Interfaces",
+    "\\PuntoVenta.Modelos",
+    "\\PuntoVenta.Modelos\\Response"
+  ],
+  "SelectedNode": "\\5N.sln",
+  "PreviewInSolutionExplorer": false
+}
