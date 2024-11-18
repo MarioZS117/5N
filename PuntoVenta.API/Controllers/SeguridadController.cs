@@ -15,4 +15,9 @@ public class SeguridadController:ControllerBase{
         var resultado=_seguridad.Login(login);
         return Ok(resultado);
     }
+    [HttpPost("Iniciar Sesion Adminstrador")]
+     public ActionResult LoginEmpleado([FromBody] LoginUsuario login){
+        var resultado=_seguridad.LoginEmpleado(login);
+        return Ok(resultado);
+    }
 }

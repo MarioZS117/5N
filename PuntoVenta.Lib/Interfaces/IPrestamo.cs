@@ -2,5 +2,7 @@ using PuntoVenta.Models.Response;
 
 public interface IPrestamo{
     object DetallePrestamo (string? Consulta);
-    object GuardarPrestamo (Libros libros, Copias copias);
+    object DetalleLibro (string? Consulta);
+    public Task<object> GuardarPrestamo (Prestamo prestamos);
+    public Task<object> ActualizarPrestamo(Prestamo prestamo);
 }
